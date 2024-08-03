@@ -52,7 +52,7 @@ const services = [
 
 const contacts = [
   "123 Maple Street, Suite 200, San Francisco, California 94105",
-  <Link key={0} href="mailto:contact@interno.com"
+  <Link key={0} href="mailto:info@interno-design.com"
     className="font-semibold text-[17px] text-black/75
     hover:text-orange-700/40 hover:cursor-pointer"
   >
