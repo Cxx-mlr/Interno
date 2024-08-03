@@ -2,7 +2,7 @@
 import { RiCompasses2Line, RiMagicLine, RiToolsFill } from "react-icons/ri";
 import LinkWithArrow from "@/components/LinkWithArrow";
 
-const steps = [
+const projectWorkflow = [
   {
     icon: <RiCompasses2Line className="size-10 text-yellow-700/40" />,
     title: "Project Planning",
@@ -22,20 +22,21 @@ const steps = [
 
 export default function Steps() {
   return (
-    <section>
+    <section aria-labelledby="project-workflow">
+      <h2 aria-labelledby="project-workflow" className="sr-only">Project Workflow</h2>
       <ul className="container mx-auto
         mt-[100px] xl:mt-[160px]
         grid grid-cols-1 xl:grid-cols-3 gap-12"
       >
-        {steps.map((step, index) => {
+        {projectWorkflow.map((workflow, index) => {
           return (
             <li
               key={index}
               className="flex flex-col items-center text-center gap-4"
             >
-              {step.icon}
-              <h2 className="font-DM_Serif_Display text-black/70">{step.title}</h2>
-              <p className="text-black/65 mt-2">{step.description}</p>
+              {workflow.icon}
+              <h2 className="font-DM_Serif_Display text-black/70">{workflow.title}</h2>
+              <p className="text-black/65 mt-2">{workflow.description}</p>
               <LinkWithArrow>Read more</LinkWithArrow>
             </li>
           );

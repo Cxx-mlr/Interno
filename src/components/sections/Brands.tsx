@@ -1,30 +1,31 @@
 
 const brands = [
   {
-    name: "",
+    name: "Modern Home",
     logo: "/assets/brands/01.svg"
   },
   {
-    name: "",
+    name: "STYLEVINTAGE INTERIOR",
     logo: "/assets/brands/02.svg"
   },
   {
-    name: "",
+    name: "Brand",
     logo: "/assets/brands/03.svg"
   },
   {
-    name: "",
+    name: "Nature Home",
     logo: "/assets/brands/04.svg"
   },
   {
-    name: "",
+    name: "Classic Design Studio",
     logo: "/assets/brands/05.svg"
   },
 ];
 
 export default function Brands() {
   return (
-    <section>
+    <section aria-labelledby="brands">
+      <h2 id="brands" className="sr-only">Brands</h2>
       <ul className="container mx-auto
         mt-[110px] xl:mt-[160px]
         flex flex-col md:flex-row items-center justify-between gap-12"

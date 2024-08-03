@@ -41,7 +41,7 @@ export default function Testimonials({
   return (
     <div className="relative">
       <span id={id} className="absolute block invisible -top-28"></span>
-      <section
+      <section aria-labelledby="testimonials"
         className="container mx-auto
         mt-[110px] xl:mt-[200px]
         bg-orange-100
@@ -49,7 +49,7 @@ export default function Testimonials({
         rounded-[70px]
         flex flex-col items-center gap-8"
       >
-        <h2 className="mt-20 text-5xl text-black/75 font-DM_Serif_Display">What clients say</h2>
+        <h2 id="testimonials" className="mt-20 text-5xl text-black/75 font-DM_Serif_Display">What clients say</h2>
         <Carousel className="w-[calc(100%-80px)] mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => {
@@ -69,9 +69,9 @@ export default function Testimonials({
                     aspect-square"
                   >
                     <div className="flex items-center gap-4">
-                      <img src={testimonial.image} alt="" />
+                      <img aria-describedby="name" src={testimonial.image} alt="" />
                       <div>
-                        <h3 className="font-DM_Serif_Display font-medium">{testimonial.name}</h3>
+                        <h3 id="name" className="font-DM_Serif_Display font-medium">{testimonial.name}</h3>
                         <span>{testimonial.location}</span>
                       </div>
                     </div>

@@ -21,10 +21,11 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-[80px] lg:py-[150px]
+    <section aria-labelledby="stats" className="py-[80px] lg:py-[150px]
       mt-[80px] xl:mt-[140px]
       bg-orange-100"
     >
+      <h2 id="stats" className="sr-only">Stats</h2>
       <ul className="container mx-auto
         grid grid-cols-1 xl:grid-cols-4
         gap-12"
@@ -33,10 +34,11 @@ export default function Stats() {
           return (
             <li key={index}
               className="text-center
-              border-r xl:border-orange-800/60 last:border-none"
+              border-r xl:border-orange-800/60 last:border-none
+              flex flex-col items-center"
             >
-              <h2 className="font-DM_Serif_Display text-6xl text-orange-800/60">{stat.value}</h2>
-              <p className="text-xl text-black/75">{stat.title}</p>
+              <p className="text-xl text-black/75 order-last">{stat.title}</p>
+              <h2 className="font-DM_Serif_Display text-6xl text-orange-800/60 order-first">{stat.value}</h2>
             </li>
           );
         })}
