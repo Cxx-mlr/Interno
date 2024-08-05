@@ -24,10 +24,11 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section aria-labelledby="brands">
-      <h2 id="brands" className="sr-only">Brands</h2>
+    <section aria-labelledby="brands"
+      className="mt-[110px] xl:mt-[160px]"
+    >
+      <h2 id="brands" className="text-black/45 text-2xl text-center mb-8">Our Trusted Partners</h2>
       <ul className="container mx-auto
-        mt-[110px] xl:mt-[160px]
         flex flex-col md:flex-row items-center justify-between gap-12"
       >
         {brands.map((brand, index) => {
