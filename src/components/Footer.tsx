@@ -108,7 +108,7 @@ export default function Footer() {
       </article>
 
       <div className="w-full xl:w-[67%]
-        flex flex-col xl:flex-row  justify-evenly
+        grid grid-cols-2 xl:grid-cols-3
         gap-12"
       >
         <article>
@@ -147,7 +147,7 @@ export default function Footer() {
           </ul>
         </article>
 
-        <article>
+        <article className="col-span-2 xl:col-span-1">
           <h3 className="font-DM_Serif_Display text-black/80 text-xl mb-6">Contact</h3>
           <ul className="flex flex-col items-center xl:items-start gap-6">
             {contacts.map((contact, index) => {
