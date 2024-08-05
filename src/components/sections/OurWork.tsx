@@ -38,7 +38,7 @@ export default function OurWork({
     <div className="relative">
       <span id={id} className="absolute block invisible -top-20"></span>
       <section aria-labelledby="our-work" className="container mx-auto
-        mt-[100px] xl:mt-[160px]
+        mt-[100px] xl:mt-[155px]
         xl:p-0"
       >
         <div className="flex flex-col items-center gap-4 max-w-[810px] mx-auto text-center">
