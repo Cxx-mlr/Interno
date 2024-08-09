@@ -12,7 +12,7 @@ export default function Contact({
       bg-black/80
       text-white/90
       text-center
-      rounded-3xl  scroll-mt-[63px]"
+      rounded-3xl scroll-mt-[80px] lg:scroll-mt-[63px]"
     >
       <div className="p-14 flex flex-col gap-4 items-center">
         <h2 id="contact-heading" className="font-DM_Serif_Display text-4xl">Do You Want to Join Interno?</h2>
