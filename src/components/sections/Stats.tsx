@@ -21,11 +21,11 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section aria-labelledby="stats" className="py-[80px] lg:py-[150px]
+    <section aria-labelledby="stats-heading" className="py-[80px] lg:py-[150px]
       mt-[80px] xl:mt-[140px]
       bg-orange-100"
     >
-      <h2 id="stats" className="sr-only">Stats</h2>
+      <h2 id="stats-heading" className="sr-only">Stats</h2>
       <ul className="container mx-auto
         grid grid-cols-1 xl:grid-cols-4
         gap-12"

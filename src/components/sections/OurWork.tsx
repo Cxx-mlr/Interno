@@ -37,12 +37,12 @@ export default function OurWork({
   return (
     <div className="relative">
       <span id={id} className="absolute block invisible -top-20"></span>
-      <section aria-labelledby="our-work" className="container mx-auto
+      <section aria-labelledby="projects-heading" className="container mx-auto
         mt-[100px] xl:mt-[155px]
         xl:p-0"
       >
         <div className="flex flex-col items-center gap-4 max-w-[810px] mx-auto text-center">
-          <h2 id="our-work" className="font-DM_Serif_Display text-5xl text-black/80">Follow Our Projects</h2>
+          <h2 id="projects-heading" className="font-DM_Serif_Display text-5xl text-black/80">Follow Our Projects</h2>
           <p>Discover our latest projects and see how we bring innovative design concepts to life.</p>
         </div>
 

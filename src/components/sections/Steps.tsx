@@ -22,8 +22,8 @@ const projectWorkflow = [
 
 export default function Steps() {
   return (
-    <section aria-labelledby="project-workflow">
-      <h2 aria-labelledby="project-workflow" className="sr-only">Project Workflow</h2>
+    <section aria-labelledby="project-workflow-heading">
+      <h2 aria-labelledby="project-workflow-heading" className="sr-only">Project Workflow</h2>
       <ul className="container mx-auto
         mt-[100px] xl:mt-[160px]
         grid grid-cols-1 xl:grid-cols-3 gap-12"

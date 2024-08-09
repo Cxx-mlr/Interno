@@ -41,7 +41,7 @@ export default function Testimonials({
   return (
     <div className="relative">
       <span id={id} className="absolute block invisible -top-28"></span>
-      <section aria-labelledby="testimonials"
+      <section aria-labelledby="testimonials-heading"
         className="container mx-auto
         mt-[110px] xl:mt-[200px]
         bg-orange-100
@@ -49,7 +49,7 @@ export default function Testimonials({
         rounded-[70px]
         flex flex-col items-center gap-8"
       >
-        <h2 id="testimonials" className="mt-20 text-5xl text-black/75 font-DM_Serif_Display">What clients say</h2>
+        <h2 id="testimonials-heading" className="mt-20 text-5xl text-black/75 font-DM_Serif_Display">What clients say</h2>
         <Carousel className="w-[calc(100%-80px)] mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => {

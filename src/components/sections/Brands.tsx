@@ -24,10 +24,10 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section aria-labelledby="brands"
+    <section aria-labelledby="brands-heading"
       className="mt-[110px] xl:mt-[160px]"
     >
-      <h2 id="brands" className="text-black/45 text-2xl text-center mb-8">Our Trusted Partners</h2>
+      <h2 id="brands-heading" className="text-black/45 text-2xl text-center mb-8">Our Trusted Partners</h2>
       <ul className="container mx-auto
         flex flex-col md:flex-row items-center justify-between gap-12"
       >

@@ -34,12 +34,12 @@ export default function News({
   return (
     <div className="relative">
       <span id={id} className="absolute block invisible top-[-74px]"></span>
-      <section aria-labelledby="news" className="container mx-auto
+      <section aria-labelledby="news-heading" className="container mx-auto
         mt-[80px] xl:mt-[150px]
         flex flex-col items-center gap-12"
       >
         <div className="max-w-[820px] text-center">
-          <h2 id="news" className="font-DM_Serif_Display text-5xl text-black/80 mb-6">Articles & News</h2>
+          <h2 id="news-heading" className="font-DM_Serif_Display text-5xl text-black/80 mb-6">Articles & News</h2>
           <p>Stay updated with the latest trends in interior design and home improvement.</p>
         </div>
         <ul className="grid grid-cols-1 xl:grid-cols-3 gap-6">
