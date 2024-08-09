@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <main>
       <Hero id="home" />
-      <ProjectWorkflow />
+      <ProjectWorkflow id="project-workflow" />
       <About id="about" />
       <Testimonials id="testimonials" />
-      <Brands />
+      <Brands id="brands" />
       <OurWork id="our-work" />
-      <Stats />
+      <Stats id="stats" />
       <News id="news" />
       <Contact id="contact" />
     </main>

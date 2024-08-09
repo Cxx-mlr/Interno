@@ -22,9 +22,13 @@ const brands = [
   },
 ];
 
-export default function Brands() {
+export default function Brands({
+  id
+}: {
+  id?: string
+}) {
   return (
-    <section aria-labelledby="brands-heading"
+    <section id={id} aria-labelledby="brands-heading"
       className="mt-[110px] xl:mt-[160px]"
     >
       <h2 id="brands-heading" className="text-black/45 text-2xl text-center mb-8">Our Trusted Partners</h2>

@@ -35,44 +35,41 @@ export default function OurWork({
   id?: string
 }) {
   return (
-    <div className="relative">
-      <span id={id} className="absolute block invisible -top-20"></span>
-      <section aria-labelledby="projects-heading" className="container mx-auto
-        mt-[100px] xl:mt-[155px]
-        xl:p-0"
-      >
-        <div className="flex flex-col items-center gap-4 max-w-[810px] mx-auto text-center">
-          <h2 id="projects-heading" className="font-DM_Serif_Display text-5xl text-black/80">Follow Our Projects</h2>
-          <p>Discover our latest projects and see how we bring innovative design concepts to life.</p>
-        </div>
+    <section id={id} aria-labelledby="projects-heading" className="container mx-auto
+      mt-[100px] xl:mt-[155px]
+      xl:p-0 scroll-mt-[95px]"
+    >
+      <div className="flex flex-col items-center gap-4 max-w-[810px] mx-auto text-center">
+        <h2 id="projects-heading" className="font-DM_Serif_Display text-5xl text-black/80">Follow Our Projects</h2>
+        <p>Discover our latest projects and see how we bring innovative design concepts to life.</p>
+      </div>
 
-        <ul className="mt-[60px] grid grid-cols-1 xl:grid-cols-2 gap-y-8 place-content-between">
-          {works.map((work, index) => {
-            return (
-              <li key={index}
-                className="w-full max-w-[548px] mx-auto"
-              >
-                <img src={work.image} alt="" />
-                <div className="flex items-center justify-between py-4">
-                  <div className="text-xl">
-                    <h3 className="font-DM_Serif_Display">{work.title}</h3>
-                    <p>{work.subtitle}</p>
-                  </div>
-                  <Link href={work.href}
-                    scroll={false}
-                    className="w-16 h-16
-                    bg-orange-100 hover:bg-orange-200/60 rounded-full
-                    flex items-center justify-center
-                    text-2xl"
-                  >
-                    <RiArrowRightSLine />
-                  </Link>
+      <ul className="mt-[60px] grid grid-cols-1 xl:grid-cols-2 gap-y-8 place-content-between">
+        {works.map((work, index) => {
+          return (
+            <li key={index}
+              className="w-full max-w-[548px] mx-auto"
+            >
+              <img src={work.image} alt="" />
+              <div className="flex items-center justify-between py-4">
+                <div className="text-xl">
+                  <h3 className="font-DM_Serif_Display">{work.title}</h3>
+                  <p>{work.subtitle}</p>
                 </div>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-    </div>
+                <Link href={work.href}
+                  scroll={false}
+                  className="w-16 h-16
+                  bg-orange-100 hover:bg-orange-200/60 rounded-full
+                  flex items-center justify-center
+                  text-2xl"
+                >
+                  <RiArrowRightSLine />
+                </Link>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }

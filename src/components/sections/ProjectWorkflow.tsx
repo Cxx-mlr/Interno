@@ -20,9 +20,13 @@ const projectWorkflow = [
   },
 ];
 
-export default function ProjectWorkflow() {
+export default function ProjectWorkflow({
+  id
+}: {
+  id?: string
+}) {
   return (
-    <section aria-labelledby="project-workflow-heading">
+    <section id={id} aria-labelledby="project-workflow-heading">
       <h2 aria-labelledby="project-workflow-heading" className="sr-only">Project Workflow</h2>
       <ul className="container mx-auto
         mt-[100px] xl:mt-[160px]

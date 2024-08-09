@@ -19,9 +19,13 @@ const stats = [
   },
 ];
 
-export default function Stats() {
+export default function Stats({
+  id
+}: {
+  id?: string
+}) {
   return (
-    <section aria-labelledby="stats-heading" className="py-[80px] lg:py-[150px]
+    <section id={id} aria-labelledby="stats-heading" className="py-[80px] lg:py-[150px]
       mt-[80px] xl:mt-[140px]
       bg-orange-100"
     >
