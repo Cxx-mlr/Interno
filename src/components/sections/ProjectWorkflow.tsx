@@ -20,7 +20,7 @@ const projectWorkflow = [
   },
 ];
 
-export default function Steps() {
+export default function ProjectWorkflow() {
   return (
     <section aria-labelledby="project-workflow-heading">
       <h2 aria-labelledby="project-workflow-heading" className="sr-only">Project Workflow</h2>

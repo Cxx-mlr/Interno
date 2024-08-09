@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/Hero";
-import Steps from "@/components/sections/Steps";
+import ProjectWorkflow from "@/components/sections/ProjectWorkflow";
 import About from "@/components/sections/About";
 import Testimonials from "@/components/sections/Testimonials";
 import Brands from "@/components/sections/Brands";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <Hero id="home" />
-      <Steps />
+      <ProjectWorkflow />
       <About id="about" />
       <Testimonials id="testimonials" />
       <Brands />
